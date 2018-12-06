@@ -37,6 +37,16 @@
   color: white;
 }
   </style>
+  <link rel="manifest" href="/manifest.json" />
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "22832b96-361f-452a-ab73-ebcaaaa1670b",
+    });
+  });
+</script>
 </head>
 <body>
 <div class="topnav">
@@ -46,5 +56,6 @@
 </div>
   <Center><h1 style="font-family:arial;">Ultimate games</h1></center>
   <center><h4>Click on the games or GBA Emulator
+    <center><div class='onesignal-customlink-container'></div></center>
 </body>
 </html>
