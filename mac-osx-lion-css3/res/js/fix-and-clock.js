@@ -35,7 +35,7 @@ setInterval( function() {
 //-----------------------------------------------------------------------------------
 
 $('.submit').click(function() {
-	var ValPassword = $('#password').val() === 'admin';
+	var ValPassword = $('#password').val() === 'Epicbrian05';
     if (ValPassword === true) {
 		$('input[type=password]').addClass('valid');
 		$('.tooltip-pass').hide();
