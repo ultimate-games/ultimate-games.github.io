@@ -27,8 +27,8 @@ setInterval( function() {
 	
 setInterval( function() {
 	var hours = new Date().getHours() % 12;
-if (hours == 0) {
-    hours += 12;
+    $(".hours, .hour").html(( hours < 10 ? "0" : "" ) + hours);
+    }, 1000);
 	$(".hours, .hour").html(( hours < 10 ? "0" : "" ) + hours);
     }, 1000);
 	
