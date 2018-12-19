@@ -411,7 +411,7 @@ input[type=password]:focus ~ .tooltip-pass {
 /*-----------------------------------------------------------------------------------*/
 
 #page {
-	background:url(../img/Andromeda-Galaxy.jpg);
+	background:url(../img/compbackground.jpeg);
 	background-size:100% 100%;
 	background-repeat:no-repeat;
 	width:100%;
