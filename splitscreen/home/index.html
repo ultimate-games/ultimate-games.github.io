@@ -7,7 +7,6 @@
     var texto = this.redir.value;
     if (texto) {
       // next line only needed for non-html5 aware browsers
-     if (texto.indexOf('http://')!=0) texto = 'http://'+texto;
       document.getElementById("red").innerHTML = "<a target='_blank' href='" + texto + "'>Click</a>";
     }
     return false;
