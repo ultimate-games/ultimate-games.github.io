@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link target="_self">
   <script>
     window.onload=function() {
   document.getElementById("test").onsubmit=function() {
     var texto = this.redir.value;
     if (texto) {
       // next line only needed for non-html5 aware browsers
-      document.getElementById("red").innerHTML = "<a target='_blank' href='" + texto + "'>Click</a>";
+      document.getElementById("red").innerHTML = "<a target='_self' href='" + texto + "'>Click</a>";
     }
     return false;
   }
