@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+    window.onload=function() {
+  document.getElementById("test").onsubmit=function() {
+    var texto = this.redir.value;
+    if (texto) {
+      // next line only needed for non-html5 aware browsers
+     if (texto.indexOf('http://')!=0) texto = 'http://'+texto;
+      document.getElementById("red").innerHTML = "<a target='_blank' href='" + texto + "'>Click</a>";
+    }
+    return false;
+  }
+}
+  </script>
 <title>Home</title>
 </head>
 <body>
@@ -8,5 +21,10 @@
 <center><h1>Links</h1>
 <center><a href="https://www.google.com/webhp?igu=1&safe=active&ssui=on">Google</a>
 <center><a href="https://www.html.am/html-generators/html-link-generator.cfm">Use link</a>
+ <center><form id="test">
+Link: <input type="url" id="redir" name="redir" required/><br />
+<input type="submit" value="Generate link"/>
+   </form></center>
+  <center><b id="red" >Link</b></center>
 </body>
 </html>
