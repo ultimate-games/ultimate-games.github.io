@@ -18,6 +18,23 @@
   <a class="active" href="https://ultimate-games.github.io/games">Games</a>
     <a href="https://ultimate-games.github.io/gba">GBA Emulator</a>
 </div>
-<center><embed width="500" height="500" src="https://ncade.ssl.hwcdn.net/flash/the-binding-of-isaac.swf" allowfullscreen>
+<center><embed id="game" width="500" height="500" src="https://ncade.ssl.hwcdn.net/flash/the-binding-of-isaac.swf" allowfullscreen>
+  
+  <center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
+  <script>
+var elem = document.getElementById("game");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+    
  </body>
 </html>
