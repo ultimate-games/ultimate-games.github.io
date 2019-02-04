@@ -18,8 +18,21 @@
   <a class="active" href="https://ultimate-games.github.io/games">Games</a>
     <a href="https://ultimate-games.github.io/gba">GBA Emulator</a>
 </div>
-<center><iframe style="width: 960px; height: 640px; overflow: hidden;" src="http://www.coolmath-games.com/gameFrame?u=sites/cmatgame/files/games/run3.swf&f=run3.swf" allowfullscreen style="border:none;" scrolling="no">Iframes not supported</iframe>
-
+<center><embed id="game" width="900" height="500" src="/games/run3/run3.swf">
+<center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
+  <script>
+var elem = document.getElementById("game");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+  
 </body>
-  </html>
-
