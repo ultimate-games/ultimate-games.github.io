@@ -17,24 +17,7 @@ body {
 			vertical-align: middle;
 		}
 
-		#activity:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100vw;
-			height: 20vh;
-			background: rgba(0,173,239,0.5);
-		}
-		#activity:after {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100vw;
-			height: 20vh;
-			background: rgba(235,0,138, 0.5);
-		}
+		
 
 		#result {
 			text-transform: uppercase;
@@ -124,7 +107,8 @@ var renderHits = function() {
 
 
 var addLot = function() {
-  hits = 0
+  hits = 0;
+	renderHits();
 }
 
 function save() {
