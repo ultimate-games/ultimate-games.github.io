@@ -43,8 +43,12 @@
 
   
 </head>
-<body>
-<div class="topnav">
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <div class="topnav">
   <a href="/#">Home</a>
   <a class="active" href="/games">Games</a>
     <a href="/gba">GBA Emulator</a>
@@ -81,5 +85,20 @@
 
   <br>
   <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQ0XBSxekizIApReSMBUFmLG6BgR49eb8ZrVnQNezVO_HFOQ/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-</body>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+    </body>
 </html>
