@@ -96,5 +96,24 @@ body {
 
 #myDiv {
   display: none;
-  text-align: center;
 }
+.game:link, .game:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  margin: auto;
+}
+
+.game:hover, .game:active {
+  background-color: red;
+}
+
+ .buttons {
+   width: 712px;
+  margin: auto;
+   background-color:#f44336;
+  }
