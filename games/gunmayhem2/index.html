@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ultimate Games</title>
+  <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="theme-color" content="#ffffff">
+ <link rel="stylesheet" href="https://ultimate-games.github.io/style.css">
+</head>
+<body>
+<div class="topnav">
+  <a href="https://ultimate-games.github.io">Home</a>
+  <a class="active" href="https://ultimate-games.github.io/games">Games</a>
+    <a href="https://ultimate-games.github.io/gba">GBA Emulator</a>
+</div>
+<center><embed id="game" width="900" height="500" src="/games/gunmayhem2/gunmayhem2.swf">
+<center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
+  <script>
+var elem = document.getElementById("game");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+  
+</body>
