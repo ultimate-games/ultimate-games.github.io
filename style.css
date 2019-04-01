@@ -117,7 +117,7 @@ body {
   margin: auto;
    background-color:#f44336;
   }
-.button {
+button {
   background-color: #a10000; /* Green */
   border: none;
   color: white;
