@@ -127,7 +127,7 @@ function getAdsPlaceholderDiv() {
         'z-index:2147483645;">' +
         '<div>' +
         '<button onclick="openY8InNewTab()">' +
-        '<img src="/y8-studio/unity/config/shared/gamebreak/placeholder.png" style="background:transparent; border:none; width:300px; height:250px;"><\/button>' +
+        '<img src="https://ultimategames.me/placeholder.png" style="background:transparent; border:none; width:300px; height:250px;"><\/button>' +
         '<\/div>' +
         '<\/div>' +
         '<\/div>'
