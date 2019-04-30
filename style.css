@@ -5,9 +5,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #262626;
-  position: absolute;
   
-  z-index: 10;
 }
 .topnav a {
   float: left;
