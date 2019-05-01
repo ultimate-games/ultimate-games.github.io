@@ -21,7 +21,16 @@
 </head>
 <body>
 <embed height="50" width="100%" src="/games/menu.html">
-<center><embed id="game" width="712" height="490" src="/games/tanktrouble/tank.swf">
+<center><object data="tank.swf" type="application/x-shockwave-flash">
+			<param name="base" value="">
+			<param name="wmode" value="">
+			<param name="movie" value="tank.swf">
+			<param name="menu" value="false">
+			<param name="allowNetworking" value="internal">
+			<param name="allowScriptAccess" value="never">
+			<embed src="tank.swf" menu="false" allownetworking="internal" allowscriptaccess="never" type="application/x-shockwave-flash">
+  </object></center>
+
 <center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
   <script>
 var elem = document.getElementById("game");
