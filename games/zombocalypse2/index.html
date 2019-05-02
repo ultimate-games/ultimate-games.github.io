@@ -18,12 +18,20 @@
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="theme-color" content="#ffffff">
  <link rel="stylesheet" href="/style.css">
+  <script>
+
+  var flashvars ={};
+  var params = {};
+  var attributes = { wmode:"direct" };
+  
+  swfobject.embedSWF("game.swf", "flashContent", "750", "488", "11", false, flashvars, params, attributes);
+
+ </script> 
 </head>
 <body>
+  
 <embed height="50" width="100%" src="/games/menu.html">
-<center><object type="application/x-shockwave-flash" width="750" height="488" data="game.swf">
-<param name="game" value="game.swf">
-</object></center>
+<div id="flashContent"></div>
   <center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
   <script>
 var elem = document.getElementById("game");
