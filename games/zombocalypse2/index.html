@@ -21,8 +21,10 @@
 </head>
 <body>
 <embed height="50" width="100%" src="/games/menu.html">
-<object width="600" height="600" class="object" style="position: static;" data="game.swf" type="application/x-shockwave-flash"><param name="base" value="game.swf"><param name="quality" value="autohigh"><param name="allowFullScreen" value="false"><param name="wmode" value="direct"><param name="allowScriptAccess" value="always"><param name="scale" value="showall"><param name="bgcolor" value="#000000"><param name="hasPriority" value="true"><param value="internal" name="allownetworking"></object>
-<center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
+<center><object type="application/x-shockwave-flash" width="750" height="488" data="game.swf">
+<param name="game" value="game.swf">
+</object></center>
+  <center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
   <script>
 var elem = document.getElementById("game");
 function openFullscreen() {
