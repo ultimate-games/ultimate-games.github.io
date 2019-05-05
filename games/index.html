@@ -26,7 +26,19 @@
 <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101169403);</script>
 <script async src="//static.getclicky.com/js"></script>
 
-
+<script type="text/javascript">
+    (function () {
+        window.siqConfig = {
+            engineKey: "588e68d41ed97ef98f90d4108c1ce1a6",
+            forceLoadSettings: false        // change false to true if search box on your site is adding dynamically
+        };
+        window.siqConfig.baseUrl = "//pub.searchiq.co/";
+        var script = document.createElement("SCRIPT");
+        script.src = window.siqConfig.baseUrl + '/js/container/siq-container-2.js?cb=' + (Math.floor(Math.random()*999999)) + '&engineKey=' + siqConfig.engineKey;
+        script.id = "siq-container";
+        document.getElementsByTagName("HEAD")[0].appendChild(script);
+    })();
+</script>
   
 </head>
 <body onload="myFunction()" style="margin:0;">
@@ -41,7 +53,10 @@
 
   <center><h1>Games</h1></center>
    <center><h3>A new game every day!</h3></center>
-  
+ <center><form id="siq_searchForm">
+     <input type="search" placeholder="Type here to search..." value="" name="s" />
+   </form></center>
+
   
   <div class="buttons">
 <a class="game" href="bomberman"><img src="https://bit.ly/2FB6257" width="175" height="80"><br>Bomberman</a></center>
