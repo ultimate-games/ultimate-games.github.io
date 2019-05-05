@@ -123,3 +123,10 @@ body {
    max-width: 950px;
   margin: auto;
   }
+#f1 input[type=submit] {
+    display: none;
+}
+.t1 {
+    border: 2px solid orange;
+    padding: 1px 5px;
+}
