@@ -41,17 +41,50 @@
 
   <center><h1>Games</h1></center>
    <center><h3>A new game every day!</h3></center>
-  <div class="search" width="950">
-    <form>
-<div class="tipue_search_group">
-<input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><button type="submit" class="tipue_search_button"><div class="tipue_search_icon">&#9906;</div></button>
-</div>
-</form>
+  <script>
+    var TRange = null;
 
-<div id="tipue_search_content"></div>
+function findString(str) {
+    if (parseInt(navigator.appVersion) < 4) return;
+    var strFound;
+    if (window.find) {
+        // CODE FOR BROWSERS THAT SUPPORT window.find
+        strFound = self.find(str);
+        if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+            strFound = self.find(str)
+        }
+        if (!strFound) {
+            strFound = self.find(str, 0, 1)
+            while (self.find(str, 0, 1)) continue
+        }
+    } else if (navigator.appName.indexOf("Microsoft") != -1) {
+        // EXPLORER-SPECIFIC CODE        
+        if (TRange != null) {
+            TRange.collapse(false)
+            strFound = TRange.findText(str)
+            if (strFound) TRange.select()
+        }
+        if (TRange == null || strFound == 0) {
+            TRange = self.document.body.createTextRange()
+            strFound = TRange.findText(str)
+            if (strFound) TRange.select()
+        }
+    } else if (navigator.appName == "Opera") {
+        alert("Opera browsers not supported, sorry...")
+        return;
+    }
+    if (!strFound) alert("String '" + str + "' not found!")
+        return;
+};
 
-   </div>
- 
+document.getElementById('f1').onsubmit = function() {
+    findString(this.t1.value);
+    return false;
+};
+  </script>
+ <input type="text" class="t1" name="t1" value="the" />
+    <input type="submit" name="b1" value="Find" />
+  
   <div class="buttons">
 <a class="game" href="bomberman"><img src="https://bit.ly/2FB6257" width="175" height="80"><br>Bomberman</a></center>
  <a class="game" href="oregontrail"><img src="https://bit.ly/2U3ibJX" width="175" height="80"><br>Oregon Trail</a>
