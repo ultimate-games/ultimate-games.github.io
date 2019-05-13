@@ -140,7 +140,7 @@ input{
     outline:none;
 }
 input:hover{
-    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+    border-color: #a8a8a8 #868686 #868686 #868686;
 }
 input:focus{
     border-color:#4d90fe;
