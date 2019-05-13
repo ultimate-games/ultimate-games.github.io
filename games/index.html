@@ -56,6 +56,32 @@
 <div style="display:none;" id="myDiv" class="animate-bottom">
   <center><h1>Games</h1></center>
    <center><h3>A new game every day!</h3></center>
+  <center><div id="slideshow">
+   <div>
+     <a href="happywheels"><img width="100%" height="100%" src="/files/happywheels.jpg"></a>
+   </div>
+   <div>
+     <a href="slope"><img width="100%" height="100%" src="/files/slope.jpg"></a>
+   </div>
+   <div>
+     <a href="getawayshootout"><img width="100%" height="100%" src="/files/getawayshootout.jpg"></a>
+   </div>
+    <div>
+     <a href="rooftopsnipers"><img width="100%" height="100%" src="/files/rooftopsnipers.jpeg"></a>
+   </div>
+</div>
+    <script>
+      $("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 7000);
+    </script>
   <center><form id="siq_searchForm">
      <input type="search" placeholder="Search Games" value="" name="s" />
     </form></center>
