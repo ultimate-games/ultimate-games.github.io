@@ -61,20 +61,24 @@
 
 
 <div class="mySlides fade">
-  <img onclick="window.location.href = 'happywheels';" width="100%" height="100%" src="/files/happywheels.jpg">
+<div class="numbertext">1 / 4</div>
+  <a href="happywheels"><img onclick="window.location.href = 'happywheels';" width="100%" height="100%" src="/files/happywheels.jpg"></a>
 </div>
 
 
 <div class="mySlides fade">
-  <img onclick="window.location.href = 'slope';" width="100%" height="100%" src="/files/slope.jpg">
+<div class="numbertext">2 / 4</div>
+  <a href="slope"><img onclick="window.location.href = 'slope';" width="100%" height="100%" src="/files/slope.jpg"></a>
 </div>
 
 <div class="mySlides fade">
-  <img onclick="window.location.href = 'getawayshootout';" width="100%" height="100%" src="/files/getawayshootout.jpg">
+<div class="numbertext">3 / 4</div>
+  <a href="getawayshootout"><img onclick="window.location.href = 'getawayshootout';" width="100%" height="100%" src="/files/getawayshootout.jpg"></a>
 </div>
 
 <div class="mySlides fade">
-  <img onclick="window.location.href = 'rooftopsnipers';" width="100%" height="100%" src="/files/rooftopsnipers.jpeg">
+<div class="numbertext">4 / 4</div>
+  <a href="rooftopsnipers"><img onclick="window.location.href = 'rooftopsnipers';" width="100%" height="100%" src="/files/rooftopsnipers.jpeg"></a>
 </div>
 
 
@@ -94,7 +98,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1} 
   slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 7000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 </script>
 
