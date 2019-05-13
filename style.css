@@ -149,7 +149,7 @@ input:focus{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 550px;
   position: relative;
   margin: auto;
 }
