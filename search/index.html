@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript">
+    (function () {
+        window.siqConfig = {
+            engineKey: "588e68d41ed97ef98f90d4108c1ce1a6",
+            forceLoadSettings: false        // change false to true if search box on your site is adding dynamically
+        };
+        window.siqConfig.baseUrl = "//pub.searchiq.co/";
+        var script = document.createElement("SCRIPT");
+        script.src = window.siqConfig.baseUrl + '/js/container/siq-container-2.js?cb=' + (Math.floor(Math.random()*999999)) + '&engineKey=' + siqConfig.engineKey;
+        script.id = "siq-container";
+        document.getElementsByTagName("HEAD")[0].appendChild(script);
+    })();
+</script>
 <title>Ultimate Games</title>
   <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
