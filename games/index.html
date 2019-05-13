@@ -56,32 +56,88 @@
 <div style="display:none;" id="myDiv" class="animate-bottom">
   <center><h1>Games</h1></center>
    <center><h3>A new game every day!</h3></center>
-  <center><div id="slideshow">
-   <div>
-     <a href="happywheels"><img width="100%" height="100%" src="/files/happywheels.jpg"></a>
-   </div>
-   <div>
-     <a href="slope"><img width="100%" height="100%" src="/files/slope.jpg"></a>
-   </div>
-   <div>
-     <a href="getawayshootout"><img width="100%" height="100%" src="/files/getawayshootout.jpg"></a>
-   </div>
-    <div>
-     <a href="rooftopsnipers"><img width="100%" height="100%" src="/files/rooftopsnipers.jpeg"></a>
-   </div>
-</div>
-    <script>
-      $("#slideshow > div:gt(0)").hide();
 
-setInterval(function() {
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-}, 7000);
-    </script>
+<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <img onclick="window.location.href = 'happywheels';" width="100%" height="100%" src="/files/happywheels.jpg">
+</div>
+
+
+<div class="mySlides fade">
+  <img onclick="window.location.href = 'slope';" width="100%" height="100%" src="/files/slope.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img onclick="window.location.href = 'getawayshootout';" width="100%" height="100%" src="/files/getawayshootout.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img onclick="window.location.href = 'rooftopsnipers';" width="100%" height="100%" src="/files/rooftopsnipers.jpeg">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7000); // Change image every 2 seconds
+}
+</script>
+
   <center><form id="siq_searchForm">
      <input type="search" placeholder="Search Games" value="" name="s" />
     </form></center>
