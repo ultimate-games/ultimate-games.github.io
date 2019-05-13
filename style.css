@@ -135,8 +135,8 @@ input{
     padding: 10px;
     margin: 10px;
     height: 20px;
-    width: 500px;
-    border:1px solid #eaeaea;
+    width: 75%;
+    border:1px solid #a6a6a6;
     outline:none;
 }
 input:hover{
