@@ -145,3 +145,13 @@ input:hover{
 input:focus{
     border-color:#4d90fe;
 }
+#slideshow {
+  margin: 0 auto;
+  position: relative;
+  max-width: 540px;
+  height: 480px;
+  padding: 10px;
+}
+#slideshow > div {
+  position: absolute;
+}
