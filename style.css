@@ -112,7 +112,7 @@ body {
 .game:hover, .game:active {
   background-color: red;
 }
-.game img {
+.game {
   display: block;
     margin: 0 auto;
 }
