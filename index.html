@@ -51,7 +51,60 @@
   <Center><p style="font-family: 'Acme', sans-serif; font-size: 60px;">Ultimate Games</p></center>
 
     <center><h3 style="margin: 0px 15% 0px;">Welcome to Ultimate Games. Check out the large selection of Flash and HTML5 games avalable, or play Game Boy Advanced games in the emulator.</h3>
-     <ul id="parent">
+     
+<div class="slideshow-container">
+<div class="mySlides fade">
+<div class="numbertext">1 / 6</div>
+  <img width="100%" height="100%" src="/files/slide.jpg">
+</div>
+
+  <div class="mySlides fade">
+<div class="numbertext">2 / 6</div>
+  <a href="minecraft"><img onclick="window.location.href = 'minecraft';" width="100%" height="100%" src="/files/minecraft.jpg"></a>
+</div>
+  
+<div class="mySlides fade">
+<div class="numbertext">3 / 6</div>
+  <a href="happywheels"><img onclick="window.location.href = 'happywheels';" width="100%" height="100%" src="/files/happywheels.jpg"></a>
+</div>
+
+
+<div class="mySlides fade">
+<div class="numbertext">4 / 6</div>
+  <a href="slope"><img onclick="window.location.href = 'slope';" width="100%" height="100%" src="/files/slope.jpg"></a>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">5 / 6</div>
+  <a href="getawayshootout"><img onclick="window.location.href = 'getawayshootout';" width="100%" height="100%" src="/files/getawayshootout.jpg"></a>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">6 / 6</div>
+  <a href="rooftopsnipers"><img onclick="window.location.href = 'blackjack';" width="100%" height="100%" src="/files/blackjack.png"></a>
+</div>
+
+
+</div>
+<br>
+
+<script>
+var slideIndex = 0;
+  showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+      <ul id="parent">
        <li>
       <center><p style="font-family: 'Acme', sans-serif; font-size: 20px;">Editor's Pick:</p></center>
       <center><a class="game" href="games/hanger2"><img src="games/hanger2/promo.gif" width="160" height="80"><br>Hanger 2</a></center>
