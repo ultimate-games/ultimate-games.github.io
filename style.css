@@ -1,3 +1,19 @@
+#parent {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#parent > li {
+    display: inline-block;
+}
+
+#parent > li:nth-child(even) {
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
