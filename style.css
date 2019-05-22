@@ -24,7 +24,7 @@ body {
   font-size: 30px;
   margin: 5px 10px;
 }
-.topnav a:hover {
+.topnav a.link:hover {
   background-color: #ddd;
   color: black;
 }
