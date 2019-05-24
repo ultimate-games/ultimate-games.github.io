@@ -10,6 +10,12 @@
   <a target="_parent" class="link" href="/#">Home</a>
   <a target="_parent" class="active link" href="/games">Games</a>
     <a target="_parent" class="link" href="/gba">GBA Emulator</a>
+  <a class="title"></a>
 </div>
+  <script>
+var title = window.parent.document.title;
+var gametitle = str.replace(' - Ultimate Games', ' ');
+document.getElementById("title").innerHTML = gametitle;
+</script>
 </body>
 </html>
