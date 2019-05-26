@@ -28,9 +28,6 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #262626;
-    position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
     z-index: 100;
 }
 .topnav a.link {
