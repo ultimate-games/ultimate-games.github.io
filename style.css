@@ -72,9 +72,8 @@ body {
 /* The alert message box */
 .alert {
   padding: 20px;
-  background-color: #f44336; /* Red */
+  background-color: #43cf36;
   color: white;
-  margin-bottom: 15px;
 }
 
 /* The close button */
