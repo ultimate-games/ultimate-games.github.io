@@ -8,7 +8,7 @@
     overflow-y: hidden;
 }
 .title:before {
-   content: "<a class='link' href='/shop'>Shop</a>Online: ";
+   content: "Online: ";
 }
 @font-face {
   font-family: 'Acme';
