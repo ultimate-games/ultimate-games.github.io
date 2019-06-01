@@ -28,6 +28,9 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+#myShop {
+  width: 100%;
+}
 .topnav {
   overflow: hidden;
   background-color: #262626;
