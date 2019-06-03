@@ -1,4 +1,10 @@
-#parent {
+iframe {
+    display:inline;
+}
+iframe:after {
+    content:"\a";
+    white-space: pre;
+}#parent {
     list-style: none;
     width: 100%;
     margin: 0;
