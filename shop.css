@@ -7,8 +7,8 @@
     overflow-x: auto;
     overflow-y: hidden;
 }
-.title:before {
-   content: "Online: ";
+.title {
+   display: none;
 }
 @font-face {
   font-family: 'Acme';
