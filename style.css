@@ -2,7 +2,7 @@ iframe {
     display:inline;
 }
 iframe:after {
-    content:"\a";
+    content:"<br>";
     white-space: pre;
 }#parent {
     list-style: none;
