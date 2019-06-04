@@ -15,6 +15,8 @@
     enable_page_level_ads: true
   });
 </script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="59790084644-569t7963f8bbd1uckg5e3l5ckedsp50q.apps.googleusercontent.com">
 <title>Ultimate Games</title>
   <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -109,7 +111,8 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 </script>
-      <center><a href="https://shop.spreadshirt.com/ultimate-games/">Get UG Merch!</a></center>
+      
+      <center><div class="g-signin2" data-onsuccess="onSignIn"></div></center>
       <ul id="parent">
        <li>
       <center><p style="font-family: 'Acme', sans-serif; font-size: 20px;">Editor's Pick:</p></center>
