@@ -14,7 +14,7 @@ iframe:after {
     overflow-y: hidden;
 }
 .title {
-   display: none;
+   
 }
 @font-face {
   font-family: 'Acme';
@@ -54,7 +54,7 @@ body {
   float: right;
   color: #f2f2f2;
   text-align: center;
-  padding: 9px 16px;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
