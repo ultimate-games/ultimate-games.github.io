@@ -62,8 +62,8 @@
       <script>
         if (auth2.isSignedIn.get()) {
   var profile = auth2.currentUser.get().getBasicProfile();
-
-  document.getElementById("hijustin").innerHTML = 'Logged in as: ' + profile.getName();
+var name = profile.getName();
+  document.getElementById("hijustin").innerHTML = 'Logged in as: ' + name;
   
 }
       </script>
