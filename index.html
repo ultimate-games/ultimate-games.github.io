@@ -60,12 +60,16 @@
     <center><div class="g-signin2" data-onsuccess="onSignIn"></div></center>
       <center><h6 id="hijustin"></h6></center>
       <script>
-        if (auth2.isSignedIn.get()) {
-  var profile = auth2.currentUser.get().getBasicProfile();
-var name = profile.getName();
-  document.getElementById("hijustin").innerHTML = 'Logged in as: ' + name;
+        var info = document.getElementById('hijustin');
+info.innerHTML = "not signed in";
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  // Do not send profile info to your backend! Use an ID token instead.
+  info.innerHTML = "signed in: " + profile.getName();
+        
+  // Send this to the backend for authenticaton.
   
-}
+    }   
       </script>
       
   
