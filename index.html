@@ -57,7 +57,27 @@
   <Center><p style="font-family: 'Acme', sans-serif; font-size: 60px;margin: 10px 0px;">Ultimate Games</p></center>
 
     <center><h3 style="margin: 0px 15% 10px;">Welcome to Ultimate Games. Check out the large selection of Flash and HTML5 unblocked games avalable, or play Game Boy Advanced games in the emulator.</h3>
-    <center><div class="g-signin2" data-onsuccess="onSignIn"></div></center> 
+    <center><div class="g-signin2" data-onsuccess="onSignIn"></div></center>
+      
+  <center><script>
+    function onSuccess(googleUser) {
+      return('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+    </script></center>
       <br>
 <div class="slideshow-container">
 <div class="mySlides fade">
