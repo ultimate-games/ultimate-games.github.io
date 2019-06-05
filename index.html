@@ -69,6 +69,8 @@ function onSignIn(googleUser) {
   var name = profile.getName();
         localStorage.setItem("name", name);
   // Send this to the backend for authenticaton.
+  var x = document.getElementsByClassName("title");
+  x[0].innerHTML = localStorage.getItem("name");
   
     }   
       </script>
