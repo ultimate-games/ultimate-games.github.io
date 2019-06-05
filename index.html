@@ -58,7 +58,7 @@
 
     <center><h3 style="margin: 0px 15% 10px;">Welcome to Ultimate Games. Check out the large selection of Flash and HTML5 unblocked games avalable, or play Game Boy Advanced games in the emulator.</h3>
     <center><div class="g-signin2" data-onsuccess="onSignIn"></div></center>
-      <center><h5><a onclick="signout()">Sign Out</a></h5></center>
+      <center><h5><a class="game" onclick="signout()">Sign Out</a></h5></center>
       
       <script>
         var x = document.getElementsByClassName("title");
@@ -80,6 +80,7 @@ function onSignIn(googleUser) {
  var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
       localStorage.clear();
+      var x = document.getElementsByClassName("title");
           x[0].innerHTML = " ";
     });
           
