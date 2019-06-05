@@ -58,28 +58,17 @@
 
     <center><h3 style="margin: 0px 15% 10px;">Welcome to Ultimate Games. Check out the large selection of Flash and HTML5 unblocked games avalable, or play Game Boy Advanced games in the emulator.</h3>
     <center><div class="g-signin2" data-onsuccess="onSignIn"></div></center>
-      <center><h6 onLoad="profile.getName()"></h6></center>
+      <center><h6 id="hijustin"></h6></center>
+      <script>
+        if (auth2.isSignedIn.get()) {
+  var profile = auth2.currentUser.get().getBasicProfile();
+
+  document.getElementById("hijustin").innerHTML = 'Logged in as: ' + profile.getName();
+  
+}
+      </script>
       
-  <center><script>
-    function onSuccess(googleUser) {
-      document.getElementById("login").innerHTML = 'Logged in as: ' + googleUser.getBasicProfile().getName();
-    }
-    function onFailure(error) {
-      console.log(error);
-    }
-    function renderButton() {
-      gapi.signin2.render('my-signin2', {
-        'scope': 'profile email',
-        'width': 240,
-        'height': 50,
-        'longtitle': true,
-        'theme': 'dark',
-        'onsuccess': onSuccess,
-        'onfailure': onFailure
-      });
-    }
-    document.getElementById("demo").innerHTML = myFunction();
-    </script></center>
+  
       <br>
 <div class="slideshow-container">
 <div class="mySlides fade">
