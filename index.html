@@ -60,8 +60,9 @@
     <center><div class="g-signin2" data-onsuccess="onSignIn"></div></center>
       
       <script>
-        var info = document.getElementById('hijustin');
-info.innerHTML = "not signed in";
+        var x = document.getElementsByClassName("title");
+  x[0].innerHTML = " ";
+        
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   // Do not send profile info to your backend! Use an ID token instead.
@@ -74,8 +75,7 @@ function onSignIn(googleUser) {
   
   
     }   
-        var x = document.getElementsByClassName("title");
-  x[0].innerHTML = " ";
+        
   x[0].innerHTML = localStorage.getItem("name");
   
       </script>
