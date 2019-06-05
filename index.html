@@ -77,9 +77,12 @@ function onSignIn(googleUser) {
   
     }   
         function signout() {
-  auth2.disconnect();
-          localStorage.clear();
+ var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      localStorage.clear();
           x[0].innerHTML = " ";
+    });
+          
           
 }
         
