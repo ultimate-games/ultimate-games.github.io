@@ -13,9 +13,6 @@ iframe:after {
     overflow-x: auto;
     overflow-y: hidden;
 }
-.title {
-   
-}
 @font-face {
   font-family: 'Acme';
   font-style: normal;
