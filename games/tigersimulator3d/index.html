@@ -35,9 +35,24 @@
 </div>
   <script src="/games/menu.js"></script>
 <center><iframe style="width: 900px; height: 600px; overflow: hidden;" frameborder="0" id="game" src="https://web.archive.org/web/20190608231656if_/https://html5.gamedistribution.com/3e8831ba57bb4b559f8a84e95f7698fc/" allowfullscreen style="border:none;" scrolling="no">Iframes not supported</iframe>
- <a class="logo">UG</a>
+<div width="900" height="50" class="gametab"> 
+  <a class="logo">UG</a>
   <a class"fullscreen" onclick="fullscreen()"><i class="fas fa-expand"></i></a>
   </div>
+  <script>
+var elem = document.getElementById("game");
+function fullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
   <input type="hidden" name="IL_IN_ARTICLE">
 <script type="text/javascript">
 var infolinks_pid = 3180917;
