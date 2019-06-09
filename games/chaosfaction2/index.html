@@ -34,11 +34,14 @@
 </div>
  <script src="/games/menu.js"></script>
 <center><embed id="game" width="800" height="600" src="/games/chaosfaction2/chaos.swf">
-<center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
- <br><input type="hidden" name="IL_IN_ARTICLE">
+<div style="width: 800px;" height="50" class="gametab"> 
+  <a class="logo">UG</a>
+  <a class="fullscreen" onclick="fullscreen()"><i class="fas fa-expand"></i></a>
+  </div>
+  
   <script>
 var elem = document.getElementById("game");
-function openFullscreen() {
+function fullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.mozRequestFullScreen) { /* Firefox */
