@@ -13,6 +13,7 @@
   });
 </script>
 <title>Gun Mayhem 2 - Ultimate Games</title>
+   <script src="https://kit.fontawesome.com/090913cfef.js"></script>
   <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -33,12 +34,15 @@
   <a class="title"><script id="_waunxu">var _wau = _wau || []; _wau.push(["dynamic", "ve5ro51iw0", "nxu", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script></a>
 </div>
   <script src="/games/menu.js"></script>
-<center><embed id="game" width="900" height="500" src="/games/gunmayhem2/gunmayhem2.swf">
-<center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
- <br><input type="hidden" name="IL_IN_ARTICLE">
+<center><embed id="game" width="750" height="500" src="/games/gunmayhem2/gunmayhem2.swf">
+<div style="width: 750px;" height="50" class="gametab"> 
+  <a class="logo">UG</a>
+  <a class="fullscreen" onclick="fullscreen()"><i class="fas fa-expand"></i></a>
+  </div>
+  
   <script>
 var elem = document.getElementById("game");
-function openFullscreen() {
+function fullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.mozRequestFullScreen) { /* Firefox */
