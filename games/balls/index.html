@@ -14,6 +14,7 @@
   });
 </script>
 <title>Balls - Ultimate Games</title>
+  <script src="https://kit.fontawesome.com/090913cfef.js"></script>
   <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -34,8 +35,27 @@
   <a class="title"><script id="_waunxu">var _wau = _wau || []; _wau.push(["dynamic", "ve5ro51iw0", "nxu", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script></a>
 </div>
   <script src="/games/menu.js"></script>
-<center><iframe style="width: 360px; height: 600px; overflow: hidden;" frameborder="0" src="https://v6p9d9t4.ssl.hwcdn.net/html/913281/index.html?v=1542800908" allowfullscreen style="border:none;" scrolling="no">Iframes not supported</iframe>
-<script type="text/javascript">
+<center><iframe id="game" style="width: 360px; height: 600px; overflow: hidden;" frameborder="0" src="https://v6p9d9t4.ssl.hwcdn.net/html/913281/index.html?v=1542800908" allowfullscreen style="border:none;" scrolling="no">Iframes not supported</iframe>
+
+  <div style="width: 900px;" height="50" class="gametab"> 
+  <a class="logo">UG</a>
+  <a class="fullscreen" onclick="fullscreen()"><i class="fas fa-expand"></i></a>
+  </div>
+  
+  <script>
+var elem = document.getElementById("game");
+function fullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+</script><script type="text/javascript">
 var infolinks_pid = 3180917;
 var infolinks_wsid = 0;
 </script>
