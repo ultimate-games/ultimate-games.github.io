@@ -14,6 +14,7 @@
     enable_page_level_ads: true
   });
 </script>
+ <script src="https://kit.fontawesome.com/090913cfef.js"></script>
 <title>Basketball Heads - Ultimate Games</title>
   <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -36,11 +37,14 @@
 </div>
  <script src="/games/menu.js"></script>
 <center><embed id="game" width="750" height="510" src="/games/bballheads/basketball.swf">
-
-  <center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
+<div style="width: 750px;" height="50" class="gametab"> 
+  <a class="logo">UG</a>
+  <a class="fullscreen" onclick="fullscreen()"><i class="fas fa-expand"></i></a>
+  </div>
+  
   <script>
 var elem = document.getElementById("game");
-function openFullscreen() {
+function fullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.mozRequestFullScreen) { /* Firefox */
@@ -52,7 +56,6 @@ function openFullscreen() {
   }
 }
 </script>
-   <br><input type="hidden" name="IL_IN_ARTICLE">
    <script type="text/javascript">
 var infolinks_pid = 3180917;
 var infolinks_wsid = 0;
