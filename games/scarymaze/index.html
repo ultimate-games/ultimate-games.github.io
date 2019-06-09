@@ -12,6 +12,7 @@
     enable_page_level_ads: true
   });
 </script>
+  <script src="https://kit.fontawesome.com/090913cfef.js"></script>
 <title>Scary Maze - Ultimate Games</title>
   <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -34,11 +35,14 @@
 </div>
   <script src="/games/menu.js"></script>
 <center><embed id="game" width="600" height="500" src="/games/scarymaze/game.swf">
-<center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
- <br><input type="hidden" name="IL_IN_ARTICLE">
+<div style="width: 600px;" height="50" class="gametab"> 
+  <a class="logo">UG</a>
+  <a class="fullscreen" onclick="fullscreen()"><i class="fas fa-expand"></i></a>
+  </div>
+  
   <script>
 var elem = document.getElementById("game");
-function openFullscreen() {
+function fullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.mozRequestFullScreen) { /* Firefox */
