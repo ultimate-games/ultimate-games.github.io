@@ -34,12 +34,14 @@
 </div>
   <script src="/games/menu.js"></script>
 <center><embed id="game" width="750" height="510" src="/games/dunkers/dunkers.swf">
-
-  <center><button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
-   <br><input type="hidden" name="IL_IN_ARTICLE">
+<div style="width: 750px;" height="50" class="gametab"> 
+  <a class="logo">UG</a>
+  <a class="fullscreen" onclick="fullscreen()"><i class="fas fa-expand"></i></a>
+  </div>
+  
   <script>
 var elem = document.getElementById("game");
-function openFullscreen() {
+function fullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.mozRequestFullScreen) { /* Firefox */
