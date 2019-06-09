@@ -43,7 +43,9 @@ body {
   overflow: hidden;
   background-color: #ff1919;
     margin-top: -4px;
-     margin: auto;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .gametab a.logo {
   float: left;
