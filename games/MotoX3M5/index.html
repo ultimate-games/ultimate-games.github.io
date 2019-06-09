@@ -13,6 +13,7 @@
     enable_page_level_ads: true
   });
 </script>
+  <script src="https://kit.fontawesome.com/090913cfef.js"></script>
 <title>MotoX3M 5 - Ultimate Games</title>
   <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -36,9 +37,26 @@
   <a class="title"><script id="_waunxu">var _wau = _wau || []; _wau.push(["dynamic", "ve5ro51iw0", "nxu", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script></a>
 </div>
   <script src="/games/menu.js"></script>
-<center><iframe style="width: 720px; height: 480px; overflow: hidden;" frameborder="0" src="https://web.archive.org/web/20190512230115if_/https://html5.gamedistribution.com/f804d079d19f44d3b951ead4588e974a/" allowfullscreen style="border:none;" scrolling="no">Iframes not supported</iframe>
- <input type="hidden" name="IL_IN_ARTICLE">
-<input type="hidden" name="IL_IN_ARTICLE">
+<center><iframe id="game" style="width: 720px; height: 480px; overflow: hidden;" frameborder="0" src="https://web.archive.org/web/20190512230115if_/https://html5.gamedistribution.com/f804d079d19f44d3b951ead4588e974a/" allowfullscreen style="border:none;" scrolling="no">Iframes not supported</iframe>
+ <div style="width: 720px;" height="50" class="gametab"> 
+  <a class="logo">UG</a>
+  <a class="fullscreen" onclick="fullscreen()"><i class="fas fa-expand"></i></a>
+  </div>
+  
+  <script>
+var elem = document.getElementById("game");
+function fullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
   <script type="text/javascript">
 var infolinks_pid = 3180917;
 var infolinks_wsid = 0;
