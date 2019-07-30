@@ -321,9 +321,7 @@ input:focus{
   to {opacity: 1}
 }
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
-body, html {
-  height: 100%;
-}
+
 .parallax {
   /* The image used */
   background-image: url('/files/front.png');
