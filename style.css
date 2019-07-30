@@ -324,7 +324,6 @@ input:focus{
 body, html {
   height: 100%;
 }
-
 .parallax {
   /* The image used */
   background-image: url('/files/front.png');
