@@ -1,0 +1,16 @@
+{
+"companyName": "UG Studios",
+"productName": "Car Soccer 2D",
+"productVersion": "1.0",
+"dataUrl": "carsoccer2d.data.unityweb",
+"wasmCodeUrl": "carsoccer2d.wasm.code.unityweb",
+"wasmFrameworkUrl": "carsoccer2d.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#FF809F",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.10f1"
+}
