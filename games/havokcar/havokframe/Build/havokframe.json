@@ -1,0 +1,16 @@
+{
+"companyName": "UG Studios",
+"productName": "Havok Car",
+"productVersion": "1",
+"dataUrl": "havokframe.data.unityweb",
+"wasmCodeUrl": "havokframe.wasm.code.unityweb",
+"wasmFrameworkUrl": "havokframe.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#800000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.10f1"
+}
